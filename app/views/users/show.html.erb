@@ -1,0 +1,41 @@
+
+
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @user.first_name %>
+    <%= @user.last_name %>
+  </h1>
+
+
+      <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <%= @user.user %>
+          </li>
+          <li class="list-group-item">
+            <%= @user.email %>
+          </li>
+          <li class="list-group-item">
+            <%= @user.phone %>
+          </li>
+        </ul>
+      </div>
+
+
+
+    </div>
+
+<br/><br/>
+  <p class="lead">
+    <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %>
+    <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+  </p>
+</div>
+
+
+</div>
+
+
+
+
